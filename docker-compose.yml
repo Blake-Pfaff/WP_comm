@@ -31,6 +31,7 @@ services:
       - wordpress
     volumes:
       - ./app/wp-content/themes/custom-theme:/app:delegated
+      - /app/node_modules
     ports:
       - 8000:8000
       - 8001:8001
